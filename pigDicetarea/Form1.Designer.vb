@@ -22,9 +22,130 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.lblJugador = New System.Windows.Forms.Label()
+        Me.txtJugador = New System.Windows.Forms.TextBox()
+        Me.lblComp = New System.Windows.Forms.Label()
+        Me.txtComputadora = New System.Windows.Forms.TextBox()
+        Me.lblAcum = New System.Windows.Forms.Label()
+        Me.txtAcum = New System.Windows.Forms.TextBox()
+        Me.lblDado = New System.Windows.Forms.Label()
+        Me.txtDado = New System.Windows.Forms.TextBox()
+        Me.btnTirar = New System.Windows.Forms.Button()
+        Me.btnParar = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'lblJugador
+        '
+        Me.lblJugador.AutoSize = True
+        Me.lblJugador.Location = New System.Drawing.Point(23, 23)
+        Me.lblJugador.Name = "lblJugador"
+        Me.lblJugador.Size = New System.Drawing.Size(45, 13)
+        Me.lblJugador.TabIndex = 0
+        Me.lblJugador.Text = "Jugador"
+        '
+        'txtJugador
+        '
+        Me.txtJugador.Location = New System.Drawing.Point(26, 53)
+        Me.txtJugador.Name = "txtJugador"
+        Me.txtJugador.Size = New System.Drawing.Size(100, 20)
+        Me.txtJugador.TabIndex = 1
+        '
+        'lblComp
+        '
+        Me.lblComp.AutoSize = True
+        Me.lblComp.Location = New System.Drawing.Point(169, 23)
+        Me.lblComp.Name = "lblComp"
+        Me.lblComp.Size = New System.Drawing.Size(70, 13)
+        Me.lblComp.TabIndex = 2
+        Me.lblComp.Text = "Computadora"
+        '
+        'txtComputadora
+        '
+        Me.txtComputadora.Location = New System.Drawing.Point(172, 53)
+        Me.txtComputadora.Name = "txtComputadora"
+        Me.txtComputadora.Size = New System.Drawing.Size(100, 20)
+        Me.txtComputadora.TabIndex = 3
+        '
+        'lblAcum
+        '
+        Me.lblAcum.AutoSize = True
+        Me.lblAcum.Location = New System.Drawing.Point(132, 86)
+        Me.lblAcum.Name = "lblAcum"
+        Me.lblAcum.Size = New System.Drawing.Size(60, 13)
+        Me.lblAcum.TabIndex = 4
+        Me.lblAcum.Text = "Acumulado"
+        '
+        'txtAcum
+        '
+        Me.txtAcum.Location = New System.Drawing.Point(108, 102)
+        Me.txtAcum.Name = "txtAcum"
+        Me.txtAcum.Size = New System.Drawing.Size(100, 20)
+        Me.txtAcum.TabIndex = 5
+        '
+        'lblDado
+        '
+        Me.lblDado.AutoSize = True
+        Me.lblDado.Location = New System.Drawing.Point(132, 135)
+        Me.lblDado.Name = "lblDado"
+        Me.lblDado.Size = New System.Drawing.Size(33, 13)
+        Me.lblDado.TabIndex = 6
+        Me.lblDado.Text = "Dado"
+        '
+        'txtDado
+        '
+        Me.txtDado.Location = New System.Drawing.Point(108, 161)
+        Me.txtDado.Name = "txtDado"
+        Me.txtDado.Size = New System.Drawing.Size(100, 20)
+        Me.txtDado.TabIndex = 7
+        '
+        'btnTirar
+        '
+        Me.btnTirar.Location = New System.Drawing.Point(51, 199)
+        Me.btnTirar.Name = "btnTirar"
+        Me.btnTirar.Size = New System.Drawing.Size(75, 23)
+        Me.btnTirar.TabIndex = 8
+        Me.btnTirar.Text = "Tirar"
+        Me.btnTirar.UseVisualStyleBackColor = True
+        '
+        'btnParar
+        '
+        Me.btnParar.Location = New System.Drawing.Point(172, 199)
+        Me.btnParar.Name = "btnParar"
+        Me.btnParar.Size = New System.Drawing.Size(75, 23)
+        Me.btnParar.TabIndex = 9
+        Me.btnParar.Text = "Parar"
+        Me.btnParar.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.btnParar)
+        Me.Controls.Add(Me.btnTirar)
+        Me.Controls.Add(Me.txtDado)
+        Me.Controls.Add(Me.lblDado)
+        Me.Controls.Add(Me.txtAcum)
+        Me.Controls.Add(Me.lblAcum)
+        Me.Controls.Add(Me.txtComputadora)
+        Me.Controls.Add(Me.lblComp)
+        Me.Controls.Add(Me.txtJugador)
+        Me.Controls.Add(Me.lblJugador)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents lblJugador As Label
+    Friend WithEvents txtJugador As TextBox
+    Friend WithEvents lblComp As Label
+    Friend WithEvents txtComputadora As TextBox
+    Friend WithEvents lblAcum As Label
+    Friend WithEvents txtAcum As TextBox
+    Friend WithEvents lblDado As Label
+    Friend WithEvents txtDado As TextBox
+    Friend WithEvents btnTirar As Button
+    Friend WithEvents btnParar As Button
 End Class
