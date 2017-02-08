@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblJugador = New System.Windows.Forms.Label()
         Me.txtJugador = New System.Windows.Forms.TextBox()
@@ -69,7 +69,7 @@ Partial Class Form1
         'lblAcum
         '
         Me.lblAcum.AutoSize = True
-        Me.lblAcum.Location = New System.Drawing.Point(132, 86)
+        Me.lblAcum.Location = New System.Drawing.Point(120, 76)
         Me.lblAcum.Name = "lblAcum"
         Me.lblAcum.Size = New System.Drawing.Size(60, 13)
         Me.lblAcum.TabIndex = 4
@@ -77,7 +77,7 @@ Partial Class Form1
         '
         'txtAcum
         '
-        Me.txtAcum.Location = New System.Drawing.Point(108, 102)
+        Me.txtAcum.Location = New System.Drawing.Point(98, 92)
         Me.txtAcum.Name = "txtAcum"
         Me.txtAcum.Size = New System.Drawing.Size(100, 20)
         Me.txtAcum.TabIndex = 5
@@ -85,7 +85,7 @@ Partial Class Form1
         'lblDado
         '
         Me.lblDado.AutoSize = True
-        Me.lblDado.Location = New System.Drawing.Point(132, 135)
+        Me.lblDado.Location = New System.Drawing.Point(129, 115)
         Me.lblDado.Name = "lblDado"
         Me.lblDado.Size = New System.Drawing.Size(33, 13)
         Me.lblDado.TabIndex = 6
@@ -93,33 +93,40 @@ Partial Class Form1
         '
         'txtDado
         '
-        Me.txtDado.Location = New System.Drawing.Point(108, 161)
+        Me.txtDado.Location = New System.Drawing.Point(98, 131)
         Me.txtDado.Name = "txtDado"
         Me.txtDado.Size = New System.Drawing.Size(100, 20)
         Me.txtDado.TabIndex = 7
         '
         'btnTirar
         '
-        Me.btnTirar.Location = New System.Drawing.Point(51, 199)
+        Me.btnTirar.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.btnTirar.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btnTirar.Location = New System.Drawing.Point(26, 175)
         Me.btnTirar.Name = "btnTirar"
         Me.btnTirar.Size = New System.Drawing.Size(75, 23)
         Me.btnTirar.TabIndex = 8
         Me.btnTirar.Text = "Tirar"
-        Me.btnTirar.UseVisualStyleBackColor = True
+        Me.btnTirar.UseVisualStyleBackColor = False
         '
         'btnParar
         '
-        Me.btnParar.Location = New System.Drawing.Point(172, 199)
+        Me.btnParar.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.btnParar.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.btnParar.Location = New System.Drawing.Point(197, 175)
         Me.btnParar.Name = "btnParar"
         Me.btnParar.Size = New System.Drawing.Size(75, 23)
         Me.btnParar.TabIndex = 9
         Me.btnParar.Text = "Parar"
-        Me.btnParar.UseVisualStyleBackColor = True
+        Me.btnParar.UseVisualStyleBackColor = False
         '
         'Form1
         '
+        Me.AccessibleDescription = ""
+        Me.AccessibleName = ""
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.btnParar)
         Me.Controls.Add(Me.btnTirar)
@@ -131,8 +138,9 @@ Partial Class Form1
         Me.Controls.Add(Me.lblComp)
         Me.Controls.Add(Me.txtJugador)
         Me.Controls.Add(Me.lblJugador)
+        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Pig Dice"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
